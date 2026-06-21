@@ -5,6 +5,11 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  @Get('testCD')
+  CD() {
+    return 'Success CD';
+  }
+
   @Get('hello')
   hi() {
     return 'hi';
